@@ -19,16 +19,16 @@ public class Jogos {
         this.parteTimeVisitante = parteTimeVisitante;
     }
 
-    public double calculaFaturamento(int quantIngressosVendidos, double valorIngresso){
-        return quantIngressosVendidos * valorIngresso;
+    public void calculaFaturamento(){
+        this.faturamento = this.quantIngressosVendidos * this.valorIngresso;
     }
 
-    public double calculaParteTimeCasa(double faturamento){
-        return (faturamento*70)/100;
+    public void calculaParteTimeCasa(){
+        this.parteTimeCasa = this.faturamento * 0.7;
     }
 
-    public double calculaParteTimeVisitante (double faturamento){
-        return (faturamento*30)/100;
+    public void calculaParteTimeVisitante() {
+        this.parteTimeVisitante = this.faturamento * 0.3;
     }
 
 }

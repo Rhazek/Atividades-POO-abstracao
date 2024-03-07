@@ -24,10 +24,9 @@ public class Main {
 
             jogos[i] = new Jogos(timeCasa, timeVisitante, quantIngressosVendidos,
                     valorIngresso, 0, 0, 0);
-            jogos[i].faturamento = jogos[i].calculaFaturamento(jogos[i].quantIngressosVendidos,
-                    jogos[i].valorIngresso);
-            jogos[i].parteTimeCasa = jogos[i].calculaParteTimeCasa(jogos[i].faturamento);
-            jogos[i].parteTimeVisitante = jogos[i].calculaParteTimeVisitante(jogos[i].faturamento);
+            jogos[i].calculaFaturamento();
+            jogos[i].calculaParteTimeCasa();
+            jogos[i].calculaParteTimeVisitante();
         }
 
         for (int i = 0; i < numJogos; i++) {
